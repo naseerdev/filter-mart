@@ -1,11 +1,15 @@
+import Link from "next/link";
+
 export default async function Header() {
 	return (
 		<header className="bg-white shadow-md">
 			<div className="container mx-auto px-4 py-3">
 				<div className="flex justify-between items-center">
 					<div className="flex items-center">
+						<Link href="/" className="cursor-pointer flex items-center">
 						<img alt="FilterMart Logo" className="h-10 mr-3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd0bloof5iV_c21dzA78Kq3mDFGp8w8xHc8Kq9Rt2TOgav9y20DwV6vUOVnyBeNXf1bHMAqooPnEX4Mj38dcU0bcZ1ggNHZ7Om1N1INTVuN8cly4tKgU1coJRVJ9BEI04P18GsJOCZI61TgnVGYTBAWMqdOTJWgrsu8LfzCf2jUfLY5MMu_0sTsIVjUC8xQ5eGnSt9gEvdizgC64sRagA6RQoh-Wry_--vx3fSK87a13Y0FIzzr2ssBEwIW1IUarEf-D-MbncBgzA" />
 						<span className="text-2xl font-bold text-blue-700">FilterMart</span>
+							</Link>
 					</div>
 					<div className="flex items-center space-x-4">
 						<div className="text-right">

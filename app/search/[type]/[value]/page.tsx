@@ -5,7 +5,7 @@ interface SearchParams {
 
 
 export default async function Page({ params }: { params: SearchParams }) {
-    const { type, value } = params;
+    const { type, value }  = await params;
 
     if (!['obn', 'oem', 'fmc'].includes(type)) {
         return <div>Invalid search type</div>;
