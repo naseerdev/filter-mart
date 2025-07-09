@@ -20,7 +20,7 @@ export default function SearchSection() {
 		setSearchValue(value);
 	};
 
-	const handleInputKeyDown = (type: 'obn' | 'oem' | 'fmc') => (e: React.KeyboardEvent<HTMLInputElement>) => {
+	const handleInputKeyDown = () => (e: React.KeyboardEvent<HTMLInputElement>) => {
 		if (e.key === 'Enter') {
 			handleSearch();
 		}
@@ -36,12 +36,12 @@ export default function SearchSection() {
 
 					<div className="flex items-center bg-white rounded-lg shadow">
 						<input
-							className="px-4 py-3 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500 w-full md:w-auto"
+							className="px-4 py-3 rounded-l-lg focus:outline-none outline-none focus:ring-2 focus:ring-blue-500 w-full md:w-auto text-black"
 							placeholder="OEM BRAND NAME"
 							type="text"
 							value={searchType === 'obn' ? searchValue : ''}
 							onChange={e => handleInputChange('obn', e.target.value)}
-							onKeyDown={handleInputKeyDown('obn')}
+							onKeyDown={handleInputKeyDown()}
 						/>
 						<button
 							className="bg-blue-700 text-white p-3 rounded-r-lg hover:bg-blue-800 transition duration-300"
@@ -61,7 +61,7 @@ export default function SearchSection() {
 							type="text"
 							value={searchType === 'oem' ? searchValue : ''}
 							onChange={e => handleInputChange('oem', e.target.value)}
-							onKeyDown={handleInputKeyDown('oem')}
+							onKeyDown={handleInputKeyDown()}
 						/>
 						<button
 							className="bg-blue-700 text-white p-3 rounded-r-lg hover:bg-blue-800 transition duration-300"
@@ -81,7 +81,7 @@ export default function SearchSection() {
 							type="text"
 							value={searchType === 'fmc' ? searchValue : ''}
 							onChange={e => handleInputChange('fmc', e.target.value)}
-							onKeyDown={handleInputKeyDown('fmc')}
+							onKeyDown={handleInputKeyDown()}
 						/>
 						<button
 							className="bg-blue-700 text-white p-3 rounded-r-lg hover:bg-blue-800 transition duration-300"
