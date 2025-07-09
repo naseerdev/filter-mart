@@ -34,7 +34,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 
         <Header/>
-        <main>
+        <main className="bg-white">
         {children}
         </main>
       <Footer/>
