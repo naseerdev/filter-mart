@@ -35,14 +35,14 @@ export default async function Header() {
 			<nav className="bg-blue-700 text-white">
 				<div className="container mx-auto px-4">
 					<ul className="flex justify-center space-x-8 py-3">
+						<li><Link href="/products" className="hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium">PRODUCTS</Link></li>
 						<li><a className="hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium" href="#">INDUSTRIAL</a></li>
 						<li><a className="hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium" href="#">RESIDENTIAL</a></li>
-						<li><a className="hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium" href="#">HOUSINGS</a></li>
 						<li><a className="hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium" href="#">SEARCH</a></li>
 						<li><a className="hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium" href="#">MARKETS SERVED</a></li>
 						<li><a className="hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium" href="#">OEM PARTNERS</a></li>
-						<li><a className="hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium" href="#">ABOUT</a></li>
-						<li><a className="hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium" href="#">CONTACT</a></li>
+						<li><Link href="/about" className="hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium">ABOUT</Link></li>
+						<li><Link href="/contact" className="hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium">CONTACT</Link></li>
 					</ul>
 				</div>
 			</nav>
